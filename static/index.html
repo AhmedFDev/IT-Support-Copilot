@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Copilot</title>
+</head>
+<body>
+    <h1>IT Support Copilot</h1>
+
+    <form id="support-form">
+        <input id="question" type="text" placeholder="Describe your IT issue" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Answer</h2>
+    <div id="answer"></div>
+    
+    <script>
+        const form = document.getElementById("support-form");
+        const questionInput = document.getElementById("question");
+        const answerDiv = document.getElementById("answer");
+
+        form.addEventListener("submit", async function(event) {
+
+            event.preventDefault();
+
+            const question = questionInput.value;
+
+            const response = await fetch("/support", {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    question: question
+                })
+            });
+
+            const data = await response.json();
+
+            answerDiv.textContent = data.answer;
+        });
+    </script>
+</body>
+</html>

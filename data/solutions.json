@@ -1,0 +1,82 @@
+[
+  {
+    "id": "vpn-001",
+    "title": "VPN will not connect",
+    "keywords": [
+      "vpn",
+      "remote",
+      "connect",
+      "connection",
+      "timeout",
+      "home"
+    ],
+    "steps": [
+      "Verify that the computer has a working internet connection.",
+      "Disconnect and reconnect to the VPN.",
+      "Confirm that the correct VPN server is selected.",
+      "Restart the VPN client.",
+      "Restart the computer if the issue continues.",
+      "Contact IT support if authentication continues to fail."
+    ]
+  },
+  {
+    "id": "wifi-001",
+    "title": "Computer cannot connect to Wi-Fi",
+    "keywords": [
+      "wifi",
+      "wireless",
+      "internet",
+      "network",
+      "connect",
+      "offline"
+    ],
+    "steps": [
+      "Confirm that Wi-Fi is enabled on the computer.",
+      "Verify that airplane mode is disabled.",
+      "Disconnect from the wireless network and reconnect.",
+      "Forget the network and enter the password again.",
+      "Restart the computer and wireless router.",
+      "Contact IT support if other devices can connect but the computer cannot."
+    ]
+  },
+  {
+    "id": "password-001",
+    "title": "User cannot sign in because of a password issue",
+    "keywords": [
+      "password",
+      "login",
+      "signin",
+      "account",
+      "locked",
+      "credentials"
+    ],
+    "steps": [
+      "Confirm that Caps Lock is disabled.",
+      "Verify that the correct username is being used.",
+      "Try signing in through the organization's password reset portal.",
+      "Reset the password if necessary.",
+      "Wait for account synchronization before trying the new password.",
+      "Contact IT support if the account remains locked."
+    ]
+  },
+  {
+    "id": "printer-001",
+    "title": "Printer is not printing",
+    "keywords": [
+      "printer",
+      "printing",
+      "paper",
+      "queue",
+      "offline",
+      "document"
+    ],
+    "steps": [
+      "Confirm that the printer is powered on.",
+      "Check whether the printer displays an error message.",
+      "Verify that paper and toner are available.",
+      "Confirm that the correct printer is selected.",
+      "Clear any stuck jobs from the print queue.",
+      "Restart the printer and computer."
+    ]
+  }
+]

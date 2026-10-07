@@ -12,12 +12,4 @@ Tech Stack:
 - Docker
 
 Architecture:
-Browser
-  ↓
-FastAPI
-  ↓
-Knowledge-base retrieval
-  ↓
-OpenAI
-  ↓
-Response
+Browser -> FastAPI -> Knowledge-base retrieval -> OpenAI -> Response
